@@ -1,0 +1,199 @@
+/* ===== Base ===== */
+:root {
+  --bg-main: #181a1b;
+  --bg-panel: #202324;
+  --bg-box: #232627;
+  --border-color: #3a3f41;
+
+  --text-main: #e8e6e3;
+  --text-muted: #b1aba1;
+
+  --link: #6ab0ff;
+  --link-hover: #9dccff;
+
+  --accent: #ff7b2c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: "Nunito", system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* ===== Links ===== */
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+/* ===== Header ===== */
+#wgg-netbar {
+  background: #0f1112;
+  border-bottom: 1px solid var(--border-color);
+}
+
+#wgg-netbar img {
+  filter: brightness(0.9);
+}
+
+/* ===== Layout ===== */
+.content-wrapper {
+  display: flex;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+#mw-panel {
+  width: 240px;
+  background: var(--bg-panel);
+  border-right: 1px solid var(--border-color);
+  padding-bottom: 40px;
+}
+
+#content {
+  flex: 1;
+  padding: 24px 32px;
+}
+
+/* ===== Sidebar ===== */
+#mw-panel .vector-menu-heading-label {
+  color: var(--text-muted);
+  font-size: 13px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+#mw-panel ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#mw-panel li {
+  margin: 4px 0;
+}
+
+#mw-panel a {
+  display: block;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+#mw-panel a:hover {
+  background: #2b2f31;
+}
+
+/* ===== Page body ===== */
+.mw-body {
+  background: transparent;
+}
+
+.firstHeading {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+/* ===== Main Page Boxes ===== */
+#mp-container {
+  display: grid;
+  gap: 16px;
+}
+
+.mp-box {
+  background: var(--bg-box);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.mp-box h2 {
+  margin: 0 0 12px 0;
+  font-size: 20px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 6px;
+}
+
+.mp-body {
+  color: var(--text-main);
+}
+
+/* ===== Icon grids ===== */
+.mp-links ul {
+  display: grid;
+  gap: 12px;
+}
+
+.mp-links.columns-8 ul {
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.mp-links.columns-2 ul {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.mp-links li {
+  text-align: center;
+}
+
+.mp-links img {
+  image-rendering: pixelated;
+  transition: transform .15s ease;
+}
+
+.mp-links a:hover img {
+  transform: scale(1.08);
+}
+
+/* ===== Tables ===== */
+table {
+  border-collapse: collapse;
+  background: var(--bg-box);
+}
+
+th, td {
+  border: 1px solid var(--border-color);
+  padding: 6px 10px;
+}
+
+th {
+  background: #2b2f31;
+}
+
+/* ===== Notices ===== */
+.messagebox {
+  background: #2a1d14;
+  border: 1px solid #5a3b22;
+}
+
+/* ===== Footer ===== */
+.printfooter {
+  margin-top: 40px;
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+/* ===== Scrollbar ===== */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #121415;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3a3f41;
+  border-radius: 5px;
+}
