@@ -92,7 +92,7 @@ a:hover {
 }
 
 #mw-panel a:hover {
-  background: #2b2f31;
+  background-image:url('image') ;
 }
 
 /* ===== Page body ===== */
